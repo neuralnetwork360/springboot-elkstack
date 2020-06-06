@@ -81,5 +81,39 @@ Query to fetch all index which created in elasticsearch ----> GET /_cat/indices?
 
 You can also delete and check once again the index using this query ----> DELETE /mobilebankingindexer
 
+-------------------------------------------------------------------------------------------------------------------------
+
+Postman Sample Request:
+
+POST - http://localhost:8081/mobilebanking-core/fundtransfer
+
+{
+	"userName":"admin",
+	"password":"addmin",
+	"amount":"500",
+	"accountNo":"12345"
+}
+
+Post - http://localhost:8082/mobilebanking-service/fundtransfer
+
+{
+	"userName":"admin",
+	"password":"admin",
+	"amount":"50",
+	"accountNo":"12345"
+}
+
+Post - http://localhost:8083/mobilebanking-payment/fundtransfer
+
+{
+	"userName":"admin",
+	"password":"addmin",
+	"amount":"100",
+	"accountNo":"1234"
+}
+
+
+
+
 
 
